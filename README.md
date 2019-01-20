@@ -1,3 +1,25 @@
 # SwiftSyntax-issue-ellipsis
 
-A description of this package.
+Run `$ swift run`
+
+You will get:
+
+```
+ccc: Int, 
+---ellipsis---
+TokenSyntax
+, 
+---
+no trailing comma
+```
+
+It should be:
+
+```
+ccc: Int, 
+---ellipsis---
+no ellipsis
+---
+TokenSyntax
+,
+```
